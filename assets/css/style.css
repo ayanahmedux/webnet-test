@@ -31,7 +31,8 @@ h2 {
 
 }
 
-a {
+a,
+li {
     font-family: "Poppins", sans-serif !important;
 }
 
@@ -121,10 +122,12 @@ P {
     padding: 10px 0;
     cursor: pointer;
     font-size: 18px;
+    font-family: "Poppins", sans-serif !important;
+
 }
 
 .menu-left li:hover {
-    color: #00bcd4;
+    color: #00bb7e;
 }
 
 .menu-right {
@@ -152,7 +155,7 @@ P {
     height: 100vh;
     overflow: hidden;
     top: -110px;
-    z-index: 0;
+    z-index: -1;
 }
 
 .video-wrapper {
@@ -210,6 +213,7 @@ section#how-can-we input[type="text"] {
     padding: 0px 20px;
     border: unset;
     font-weight: 500;
+    font-family: "Poppins", sans-serif;
 }
 
 button.btn-search {
@@ -222,6 +226,7 @@ button.btn-search {
     font-weight: 700;
     text-transform: uppercase;
     transition: all 500ms ease-in-out;
+    font-family: "Poppins", sans-serif;
 }
 
 button.btn-search:hover {
@@ -411,10 +416,11 @@ section#expert-opinions {
 
 .row.hr-cards-row {
     padding: 30px 0px;
+    margin: 0 auto;
 }
 
 section#expertise-sec {
-    padding: 80px 0px;
+    padding: 50px 0px 80px 0px;
 }
 
 .expertise-heading {
@@ -449,15 +455,15 @@ section#expertise-sec {
 }
 
 .expertise-image-wrapper img {
-    width: 457px;
+    width: 100%;
     height: 460px;
     object-fit: cover;
-    margin: 0 auto;
 }
 
 .expertise-card {
     position: relative;
     overflow: hidden;
+    margin: 0px 20px;
 }
 
 .expertise-card-content {
@@ -474,7 +480,7 @@ section#expertise-sec {
     display: block;
     pointer-events: none;
     margin: 0 auto;
-    width: 83.5%;
+    width: 100%;
 }
 
 .expertise-card:hover .expertise-card-content {
@@ -667,6 +673,7 @@ section#salary-guide-section .row>* {
     width: 256px;
     height: 504px;
     margin: 0 6px;
+    object-fit: cover;
 }
 
 .media-image-wrapper {
@@ -732,6 +739,7 @@ section#salary-guide-section .row>* {
     color: #00bb7e;
     margin: 0 auto;
 }
+
 .play-video {
     padding: 10px 0px;
 }
@@ -745,29 +753,34 @@ section#salary-guide-section .row>* {
     text-decoration: none;
     color: white;
 }
-section#media-center button.slick-prev.slick-arrow{
+
+section#media-center button.slick-prev.slick-arrow {
     background: #00bb7e;
     height: 50px;
     width: 50px;
     border-radius: 50%;
     left: -55px;
 }
-section#media-center button.slick-next.slick-arrow{
+
+section#media-center button.slick-next.slick-arrow {
     background: #00bb7e;
     height: 50px;
     width: 50px;
     border-radius: 50%;
 }
+
 section#media-center {
     padding: 50px 0px;
 }
+
 section#our-team {
     padding: 50px 0px;
 }
+
 .team-slider {
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 0 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
 }
 
 .team-card {
@@ -779,56 +792,59 @@ section#our-team {
 }
 
 .team-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 
 .overlay-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 20px;
-  width: 100%;
-  color: #fff;
-  z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    color: #fff;
+    z-index: 2;
 }
 
 .overlay-top h3 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 10px black;
 }
 
 .overlay-top p {
-  margin: 5px 0 0;
-  font-size: 14px;
-  color: white;
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: white;
+    text-shadow: 1px 1px 10px black;
 }
 
 
 .overlay-hover {
-  position: absolute;
-  bottom: -60px;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  color: #fff;
-  text-align: center;
-  padding: 25px;
-  font-size: 16px;
-  font-weight: bold;
-  transition: bottom 0.3s ease;
-  z-index: 1;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: bottom 0.3s ease;
+    z-index: 1;
 }
 
 .team-card:hover .overlay-hover {
-  bottom: 0;
+    bottom: 0;
 }
-section#our-team .slick-prev{
+
+section#our-team .slick-prev {
     background: #00bb7e;
     height: 50px;
     width: 50px;
@@ -837,7 +853,8 @@ section#our-team .slick-prev{
     bottom: -100px;
     left: 45%;
 }
-section#our-team .slick-next{
+
+section#our-team .slick-next {
     background: #00bb7e;
     height: 50px;
     width: 50px;
@@ -846,17 +863,440 @@ section#our-team .slick-next{
     bottom: -100px;
     right: 45%;
 }
-.overlay-hover a{
+
+.overlay-hover a {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     border-bottom: 1px solid #fff;
     padding-bottom: 8px;
     text-decoration: none;
+    transition: all 500ms ease-in-out;
+    background: linear-gradient(45deg, #ffffff, #fffcfc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.overlay-hover a:hover {
+    color: #00bb7e;
+    background: -webkit-linear-gradient(#00bb7e, #009cde);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-color: #00bb7e;
+}
+
+section#our-advantage {
+    margin: 70px 0px 0px 0px;
+    padding: 100px 0px;
+    background: url(../images/advantage-back-image.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-color: rgb(0 0 0 / 90%);
+}
+
+section#our-advantage .expert-heading-sec span {
+    color: #fff;
+}
+
+section#our-advantage .expert-opinion-heading h3 {
     color: white;
 }
+
+section#our-advantage .expert-opinion-heading h3:before {
+    background: white;
+}
+
+section#our-advantage .expert-opinion-heading h3::after {
+    background: white;
+}
+
+.advantage-card-text {
+    text-align: center;
+}
+
+.advantage-card-text h3 {
+    padding: 20px 0px;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.advantage-card-text p {
+    color: white;
+}
+
+.custom-search-bar {
+    display: flex;
+    align-items: center;
+    background: #e6f0fa;
+    border-radius: 0px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    max-width: 530px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 119, 204, 0.15);
+}
+
+.custom-search-bar input {
+    flex: 1;
+    padding: 14px 16px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #fff;
+    color: #333;
+    font-family: "Poppins", sans-serif;
+}
+
+.custom-search-bar button {
+    background-color: #0077cc;
+    border: none;
+    padding: 16px 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.custom-search-bar button:hover {
+    background-color: #005fa3;
+}
+
+.custom-search-bar i {
+    font-size: 16px;
+}
+
+section#newsletter-section {
+    padding: 70px 0px;
+    background: #14171A;
+    color: white;
+}
+
+section#newsletter-section h2 {
+    color: white;
+    padding: 20px 0px;
+}
+
+.newsletter-i-section {
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: baseline;
+}
+
+section#newsletter-section .row {
+    align-items: center;
+}
+
+.newsletter-i-section i {
+    padding: 0px 22px;
+    font-size: 32px;
+}
+
+.footer-main {
+    background-color: #fff;
+    color: #000;
+    font-family: sans-serif;
+    padding: 70px 0px 40px 0px;
+}
+
+.footer-logo {
+    max-width: 100%;
+    margin: 0 auto;
+    display: table;
+    height: auto;
+}
+
+.footer-link-text {
+    color: #000;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.contact-now {
+    font-weight: 600;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    padding-bottom: 2px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-now:hover {
+    color: #00bb7e;
+    border-color: #00bb7e;
+}
+
+a.phone-number:hover {
+    color: #00bb7e;
+}
+
+a.phone-number {
+    transition: 0.5s;
+    color: black;
+}
+
+.social-icon {
+    width: 38px;
+    height: 38px;
+    background-color: #0c5c66;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 14px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background: #00bb7e;
+    color: white;
+}
+
+.footer-links a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #00bb7e;
+}
+
+.divider {
+    color: #ccc;
+    margin: 0 5px;
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.count-animate {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.6s ease-in-out;
+}
+
+.count-animate.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
 @media only screen and (max-width:1920px) {
     .video-wrapper iframe {
-        height: 945px;
+        height: 1075px;
+    }
+}
+
+@media only screen and (max-width:1600px) {
+    .video-wrapper iframe {
+        height: 900px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .video-wrapper iframe {
+        height: 800px;
+    }
+}
+
+@media only screen and (max-width:1399px) {
+    .hr-card-content {
+        height: 270px;
+    }
+}
+
+@media only screen and (max-width: 1299px) {
+    .video-wrapper iframe {
+        height: 760px;
+    }
+
+    section#how-can-we .container {
+        margin-top: -150px;
+    }
+
+    section#expertise-sec .slick-slider .slick-prev {
+        left: 45%;
+    }
+
+    section#expertise-sec .slick-slider .slick-next {
+        right: 45%;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .video-wrapper iframe {
+        height: 700px;
+    }
+
+    section#how-can-we .container {
+        margin-top: -210px;
+    }
+
+    .hr-card-content {
+        height: 300px;
+        padding: 30px;
+    }
+}
+@media only screen and (max-width:1024px) {
+    .video-wrapper iframe {
+        height: 600px;
+    }
+    section#how-can-we .container {
+        margin-top: -310px;
+    }
+    section#expertise-sec .slick-slider .slick-prev {
+        left: 44%;
+    }
+
+    section#expertise-sec .slick-slider .slick-next {
+        right: 44%;
+    }
+    section#our-team .slick-next{
+        right: 44%;
+    }
+    section#our-team .slick-prev{
+        left: 44%;
+    }
+}
+@media only screen and (max-width:991px) {
+    .the-customer-sec-parent p br {
+        display: none;
+    }
+    .customer-cards{
+        margin-bottom: 20px;
+    }
+    .hr-card-content {
+        height: auto;
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+    .right-side{
+        padding: 90px 0px;
+    }
+    .newsletter-i-section{
+        justify-content: center;
+    }
+    section#newsletter-section{
+        text-align: center;
+    }
+    .social-icons {
+        flex-wrap: wrap;
+    }    
+    button.btn-search{
+        width: 25%;
+    }
+    section#expert-opinions{
+        padding: 50px 0px 10px 0px;
+    }
+    section#expertise-sec {
+        padding: 0px 0px 80px 0px;
+    }
+    section#salary-guide-section,
+    section#our-team,
+    section#media-center{
+        padding: 30px 0px;
+    }
+    section#our-advantage{
+        padding: 70px 0px
+    }
+    .expert-opinion-heading h1 {
+        color: #000;
+        font-size: 40px;
+        line-height: 50px;
+    }       
+}
+@media only screen and (max-width:768px) {
+    .video-wrapper iframe {
+        height: 470px;
+    }
+    section#how-can-we .container {
+        margin-top: -440px;
+     padding: 30px;
+    }
+    section#how-can-we input[type="text"]{
+        width: 75%;
+    }
+    section#expertise-sec .slick-slider .slick-prev {
+        left: 42%;
+    }
+
+    section#expertise-sec .slick-slider .slick-next {
+        right: 42%;
+    }
+    section#our-team .slick-next{
+        right: 42%;
+    }
+    section#our-team .slick-prev{
+        left: 42%;
+    }
+    footer.footer-main .col-md-3 {
+        width: 49%;
+    }
+    section#the-customer{
+        padding: 30px 0px;
+    }
+}
+@media only screen and (max-width:425px) {
+    .video-wrapper iframe {
+        height: 280px;
+    }
+    section#how-can-we .container {
+        margin-top: -630px;
+        padding: 30px;
+    }
+    button.btn-search {
+        width: 36%;
+    }
+    section#expertise-sec .slick-slider .slick-prev {
+        left: 32%;
+    }
+
+    section#expertise-sec .slick-slider .slick-next {
+        right: 32%;
+    }
+    section#our-team .slick-next{
+        right: 32%;
+    }
+    section#our-team .slick-prev{
+        left: 32%;
+    }
+    section#media-center button.slick-next.slick-arrow{
+        right: 5px;
+        z-index: 2;
+    }
+    section#media-center button.slick-prev.slick-arrow{
+        left: 5px;
+        z-index: 2;
+    }
+}
+@media only screen and (max-width:375px){
+    .team-card{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+}
+@media only screen and (max-width:360px) {
+    #hero{
+        top: -190px;
+    }
+    section#how-can-we .container {
+        margin-top: -710px;
+        padding: 30px;
     }
 }
