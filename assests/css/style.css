@@ -764,6 +764,97 @@ section#media-center {
 section#our-team {
     padding: 50px 0px;
 }
+.team-slider {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.team-card {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.team-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.overlay-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  color: #fff;
+  z-index: 2;
+}
+
+.overlay-top h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.overlay-top p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: white;
+}
+
+
+.overlay-hover {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: bottom 0.3s ease;
+  z-index: 1;
+}
+
+.team-card:hover .overlay-hover {
+  bottom: 0;
+}
+section#our-team .slick-prev{
+    background: #00bb7e;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    top: unset;
+    bottom: -100px;
+    left: 45%;
+}
+section#our-team .slick-next{
+    background: #00bb7e;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    top: unset;
+    bottom: -100px;
+    right: 45%;
+}
+.overlay-hover a{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 8px;
+    text-decoration: none;
+    color: white;
+}
 @media only screen and (max-width:1920px) {
     .video-wrapper iframe {
         height: 945px;

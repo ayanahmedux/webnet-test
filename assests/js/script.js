@@ -188,3 +188,45 @@ $(document).ready(function () {
     });
   });
   
+  $(document).ready(function () {
+    $('.slick-team').slick({
+      slidesToShow: 1.2,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: true,
+      infinite: false,
+      autoplay:true,
+      responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1.2,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4,
+          },
+        },
+        {
+          breakpoint: 9999,
+          settings: {
+            slidesToShow: 4,
+          },
+        },
+      ],
+    });
+});  
